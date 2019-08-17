@@ -60,6 +60,8 @@ jobs:
           name: Install and configure dependency
           command: |
             npm install -g --silent gh-pages
+            git config --global user.email "imWillX@users.noreply.github.com"
+            git config --global user.name "imWillX"
       - run:
           name: Deploy
           command: gh-pages --dist build/docs/javadoc
